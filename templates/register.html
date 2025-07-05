@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>register page</h1>+
+    {% if error %}
+    <h1 style="color:red">{{error}}</h1>
+    {% endif %}
+<form method="post">
+        {% csrf_token %}
+    <label for="Num1">enter username:</label>
+    <input type="text" name="Num1" placeholder="username" required><br><br>
+    <label for="Num2">password</label>
+    <input type="password" name="Num2" placeholder="password" required><br><br>
+    <label for="Num3">Renter password</label>
+    <input type="password" name="Num3" placeholder="Renter password" required><br><br>
+    <button type="Submit">Login</button>
+</form>
+    
+    already have an account?<a href="{% url 'login_page' %}">register</a>
+</body>
+</html>
