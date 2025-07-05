@@ -1,5 +1,4 @@
 django
 python
 gunicorn
-scikit-learn
 numpy
