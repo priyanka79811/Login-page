@@ -1,5 +1,6 @@
 django
-python
+scikit-learn
 gunicorn
 numpy
+pandas
 
